@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60A48C81EC69AC7000BF113 /* DKMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D60A48C71EC69AC7000BF113 /* DKMediator.m */; };
+		D60A48CB1EC6A844000BF113 /* DKOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60A48CA1EC6A844000BF113 /* DKOneViewController.m */; };
+		D60A48CE1EC6A867000BF113 /* Target_One.m in Sources */ = {isa = PBXBuildFile; fileRef = D60A48CD1EC6A867000BF113 /* Target_One.m */; };
+		D60A48D11EC6A9B2000BF113 /* DKMediator+DkOne.m in Sources */ = {isa = PBXBuildFile; fileRef = D60A48D01EC6A9B2000BF113 /* DKMediator+DkOne.m */; };
 		D64494451EB30EC900040C7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D64494441EB30EC900040C7A /* main.m */; };
 		D64494481EB30EC900040C7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D64494471EB30EC900040C7A /* AppDelegate.m */; };
 		D644944B1EB30EC900040C7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D644944A1EB30EC900040C7A /* ViewController.m */; };
@@ -15,11 +19,6 @@
 		D64494531EB30ECA00040C7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64494511EB30ECA00040C7A /* LaunchScreen.storyboard */; };
 		D644945E1EB30ECA00040C7A /* MediatorToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D644945D1EB30ECA00040C7A /* MediatorToolTests.m */; };
 		D64494691EB30ECA00040C7A /* MediatorToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D64494681EB30ECA00040C7A /* MediatorToolUITests.m */; };
-		D64494781EB30EDB00040C7A /* DKMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D64494771EB30EDB00040C7A /* DKMediator.m */; };
-		D644947D1EB32C4B00040C7A /* DKFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D644947C1EB32C4B00040C7A /* DKFirstViewController.m */; };
-		D64494801EB32C5A00040C7A /* DKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D644947F1EB32C5A00040C7A /* DKTableViewController.m */; };
-		D64494891EB32EA300040C7A /* Target_First.m in Sources */ = {isa = PBXBuildFile; fileRef = D64494881EB32EA300040C7A /* Target_First.m */; };
-		D644948C1EB32F0E00040C7A /* DKMediator+First.m in Sources */ = {isa = PBXBuildFile; fileRef = D644948B1EB32F0E00040C7A /* DKMediator+First.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D60A48C61EC69AC7000BF113 /* DKMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKMediator.h; sourceTree = "<group>"; };
+		D60A48C71EC69AC7000BF113 /* DKMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKMediator.m; sourceTree = "<group>"; };
+		D60A48C91EC6A844000BF113 /* DKOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKOneViewController.h; sourceTree = "<group>"; };
+		D60A48CA1EC6A844000BF113 /* DKOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKOneViewController.m; sourceTree = "<group>"; };
+		D60A48CC1EC6A867000BF113 /* Target_One.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_One.h; sourceTree = "<group>"; };
+		D60A48CD1EC6A867000BF113 /* Target_One.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_One.m; sourceTree = "<group>"; };
+		D60A48CF1EC6A9B2000BF113 /* DKMediator+DkOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DKMediator+DkOne.h"; sourceTree = "<group>"; };
+		D60A48D01EC6A9B2000BF113 /* DKMediator+DkOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DKMediator+DkOne.m"; sourceTree = "<group>"; };
 		D64494401EB30EC900040C7A /* MediatorTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediatorTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64494441EB30EC900040C7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D64494461EB30EC900040C7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,16 +63,6 @@
 		D64494641EB30ECA00040C7A /* MediatorToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediatorToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64494681EB30ECA00040C7A /* MediatorToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorToolUITests.m; sourceTree = "<group>"; };
 		D644946A1EB30ECA00040C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D64494761EB30EDB00040C7A /* DKMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKMediator.h; sourceTree = "<group>"; };
-		D64494771EB30EDB00040C7A /* DKMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKMediator.m; sourceTree = "<group>"; };
-		D644947B1EB32C4B00040C7A /* DKFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKFirstViewController.h; sourceTree = "<group>"; };
-		D644947C1EB32C4B00040C7A /* DKFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKFirstViewController.m; sourceTree = "<group>"; };
-		D644947E1EB32C5A00040C7A /* DKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKTableViewController.h; sourceTree = "<group>"; };
-		D644947F1EB32C5A00040C7A /* DKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKTableViewController.m; sourceTree = "<group>"; };
-		D64494871EB32EA300040C7A /* Target_First.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_First.h; sourceTree = "<group>"; };
-		D64494881EB32EA300040C7A /* Target_First.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_First.m; sourceTree = "<group>"; };
-		D644948A1EB32F0E00040C7A /* DKMediator+First.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DKMediator+First.h"; sourceTree = "<group>"; };
-		D644948B1EB32F0E00040C7A /* DKMediator+First.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DKMediator+First.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,18 +113,14 @@
 		D64494421EB30EC900040C7A /* MediatorTool */ = {
 			isa = PBXGroup;
 			children = (
-				D64494761EB30EDB00040C7A /* DKMediator.h */,
-				D64494771EB30EDB00040C7A /* DKMediator.m */,
 				D64494791EB32C3500040C7A /* Medaitor */,
 				D644947A1EB32C3500040C7A /* Target */,
 				D64494461EB30EC900040C7A /* AppDelegate.h */,
 				D64494471EB30EC900040C7A /* AppDelegate.m */,
 				D64494491EB30EC900040C7A /* ViewController.h */,
 				D644944A1EB30EC900040C7A /* ViewController.m */,
-				D644947B1EB32C4B00040C7A /* DKFirstViewController.h */,
-				D644947C1EB32C4B00040C7A /* DKFirstViewController.m */,
-				D644947E1EB32C5A00040C7A /* DKTableViewController.h */,
-				D644947F1EB32C5A00040C7A /* DKTableViewController.m */,
+				D60A48C91EC6A844000BF113 /* DKOneViewController.h */,
+				D60A48CA1EC6A844000BF113 /* DKOneViewController.m */,
 				D644944C1EB30ECA00040C7A /* Main.storyboard */,
 				D644944F1EB30ECA00040C7A /* Assets.xcassets */,
 				D64494511EB30ECA00040C7A /* LaunchScreen.storyboard */,
@@ -166,8 +159,10 @@
 		D64494791EB32C3500040C7A /* Medaitor */ = {
 			isa = PBXGroup;
 			children = (
-				D644948A1EB32F0E00040C7A /* DKMediator+First.h */,
-				D644948B1EB32F0E00040C7A /* DKMediator+First.m */,
+				D60A48C61EC69AC7000BF113 /* DKMediator.h */,
+				D60A48C71EC69AC7000BF113 /* DKMediator.m */,
+				D60A48CF1EC6A9B2000BF113 /* DKMediator+DkOne.h */,
+				D60A48D01EC6A9B2000BF113 /* DKMediator+DkOne.m */,
 			);
 			path = Medaitor;
 			sourceTree = "<group>";
@@ -175,8 +170,8 @@
 		D644947A1EB32C3500040C7A /* Target */ = {
 			isa = PBXGroup;
 			children = (
-				D64494871EB32EA300040C7A /* Target_First.h */,
-				D64494881EB32EA300040C7A /* Target_First.m */,
+				D60A48CC1EC6A867000BF113 /* Target_One.h */,
+				D60A48CD1EC6A867000BF113 /* Target_One.m */,
 			);
 			path = Target;
 			sourceTree = "<group>";
@@ -315,14 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D64494801EB32C5A00040C7A /* DKTableViewController.m in Sources */,
 				D644944B1EB30EC900040C7A /* ViewController.m in Sources */,
-				D644948C1EB32F0E00040C7A /* DKMediator+First.m in Sources */,
-				D644947D1EB32C4B00040C7A /* DKFirstViewController.m in Sources */,
 				D64494481EB30EC900040C7A /* AppDelegate.m in Sources */,
+				D60A48CB1EC6A844000BF113 /* DKOneViewController.m in Sources */,
+				D60A48CE1EC6A867000BF113 /* Target_One.m in Sources */,
 				D64494451EB30EC900040C7A /* main.m in Sources */,
-				D64494781EB30EDB00040C7A /* DKMediator.m in Sources */,
-				D64494891EB32EA300040C7A /* Target_First.m in Sources */,
+				D60A48C81EC69AC7000BF113 /* DKMediator.m in Sources */,
+				D60A48D11EC6A9B2000BF113 /* DKMediator+DkOne.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

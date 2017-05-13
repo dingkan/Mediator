@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "DKTableViewController.h"
+#import "ViewController.h"
 #import "DKMediator.h"
 
 @interface AppDelegate ()
@@ -19,12 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+//
     self.window = [[UIWindow alloc]init];
     
     [self.window makeKeyAndVisible];
     
-    self.window.rootViewController = [[DKTableViewController alloc]init];
+    self.window.rootViewController = [[ViewController alloc]init];
     
     
     return YES;
@@ -60,17 +60,29 @@
 
 -(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
     
-    //远程调用
-    [[DKMediator sharedInstance] performActionWithUrl:url completion:^(NSDictionary *info) {
-        id result = info[@"result"];
+    if ([url.scheme isEqualToString:@"dingkan"]) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"前往" preferredStyle:UIAlertControllerStyleActionSheet];
         
-        if (result != nil) {
-            UIViewController *vc = self.window.rootViewController;
+        UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"前往" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             
-            [vc presentViewController:(UIViewController *)result animated:YES completion:nil];
+            UIViewController *rootVC = [UIApplication sharedApplication].keyWindow.rootViewController;
             
-        }
-    }];
+            UIViewController *jumpVc = [[DKMediator sharedInstance] performActionWithUrl:url complection:nil];
+            
+            [rootVC presentViewController:jumpVc animated:YES completion:nil];
+            
+            
+        }];
+        
+        UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"前往" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        
+        [alert addAction:action1];
+        [alert addAction:action2];
+        
+        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
+    }
     
     
     return YES;
